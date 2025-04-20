@@ -28,6 +28,18 @@
         {
             position: relative;
             display: inline-block;
+            span{
+                text-transform: uppercase;
+                font-weight: 500;
+                color: #9ba0ab;
+                font-size: 0.8rem;
+                transition: all 0.3s ease;
+            }
+            span:hover
+            {
+                color: $primary-key;
+                cursor: pointer;
+            }
         }
         &>li>a
         {
@@ -396,5 +408,39 @@
 {
     transform: translateX(-100%);
     transition: all 0.2s ease;
+}
+.menu_hierarchy
+{
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.4s ease;
+    &>ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        li{
+            text-transform: uppercase ;
+            font-size: 0.8rem;
+            color: #9ba0ab;
+            font-weight: bold;
+            a{
+                color: #9ba0ab;
+                font-weight: 500;
+                transition: all 0.2s ease;
+            }
+            a:hover,
+            a:active
+            {
+                color: #000000;
+            }
+        }
+    }
+}
+.active_hierarchy
+{
+    height: 100%;
+    transition: all 0.4s ease;
 }
 }

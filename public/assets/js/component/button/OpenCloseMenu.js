@@ -2,9 +2,11 @@ export function ButtonMenu()
 {
     let ButtonOpenMneu = document.querySelector(".fa-bars");
     let ButtonCloseMenu = document.querySelector(".fa-x");
+    let OpenCrolList = document.querySelector(".menu_scrol_list");
     ButtonOpenMneu.addEventListener("click",HandelOpenMenu);
     ButtonCloseMenu.addEventListener("click",HandelCloseMenu);
-    document.addEventListener("keydown",HandelLisentKeyBoard)
+    document.addEventListener("keydown",HandelLisentKeyBoard);
+    OpenCrolList.addEventListener("click",HandelScrolList)
 }
 function HandelOpenMenu()
 {
@@ -24,4 +26,9 @@ function HandelLisentKeyBoard()
             BorderMneu.classList.remove("active_menu")
         }
     })
+}
+function HandelScrolList()
+{
+    const BorderList = document.querySelector(".menu_hierarchy");
+    BorderList.classList.toggle("active_hierarchy")
 }
