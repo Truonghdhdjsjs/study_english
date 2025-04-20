@@ -1,2 +1,5 @@
 phần menu 
 -
+lệnh update  composer
+
+composer dump-autoload
