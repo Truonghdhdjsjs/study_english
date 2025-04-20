@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Thư mục gốc nếu bạn đang dùng thư mục con như "study_english"
+    RewriteBase /study_english/public/
+
+    # Nếu request không phải file hoặc thư mục thực tế
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Chuyển hướng tất cả về index.php
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>

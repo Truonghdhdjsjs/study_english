@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/base/_reset.scss","../scss/abstracts/_variables.scss","../scss/base/_typography.scss","../scss/base/_global.scss"],"names":[],"mappings":"AAEQ;AACR;EAEI;EACA;EACA;EACA,aCPS;;;ACAb;EAEI,WDDO;ECEP;;;ACJJ;EACI;;;AAEJ;EACI","file":"style.css"}

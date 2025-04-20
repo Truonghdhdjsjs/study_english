@@ -1,0 +1,9 @@
+{
+    "name": "admin/study_english",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {}
+}

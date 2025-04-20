@@ -1,0 +1,31 @@
+@mixin display-flex($gap)
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+@mixin border-radius($radius)
+{
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin custom-text($fontweight,$fontsize,$lineheight,$lectspace){
+    font-weight: $fontweight;
+    font-size: $fontsize;
+    line-height: $lineheight;
+    letter-spacing: $lectspace;
+
+}
+@mixin display-gird($gap)
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+    gap: $gap;
+}
+@mixin font-clamp($min,$normal,$max)
+{
+    font-size: clamp($min,$normal,$max);
+}

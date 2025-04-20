@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+body
+{
+    font-size: $font-size;
+    line-height: 1.5;
+}
